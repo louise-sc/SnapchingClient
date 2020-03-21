@@ -1,0 +1,244 @@
+
+@import "../../../../../assets/scss/variable";
+
+.feature {
+  background-image: $team-bg;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: 0 10%;
+}
+
+.feature-block {
+  width: 100%;
+  height: auto;
+  padding: 50px 30px;
+  .team-social {
+    left: 0;
+    right: 0;
+    text-align: center;
+    li a {
+      border: 1px solid #ddd;
+      border-radius: 100%;
+      padding: 8px;
+      text-align: center;
+      color: $color_orange;
+      transition: all 0.3s ease;
+      i {
+        width: 20px;
+        font-size: 14px;
+        color: #444444;
+      }
+      &:hover {
+        background-color: $color_orange;
+        border: 1px solid $color_orange;
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+.feature-box {
+  background-color: $white;
+  padding: 30px;
+  .overlay {
+    position: relative;
+  }
+  .feature-avtar {
+    img {
+      height: 100px;
+      width: 100px !important;
+      border-radius: 100%;
+      margin: 0 auto;
+    }
+  }
+}
+
+.feature-text {
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+    margin-bottom: 13px;
+    line-height: 1;
+  }
+  h6 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    line-height: 1;
+  }
+}
+
+.team-social {
+  position: absolute;
+  padding-left: 0;
+  align-items: center;
+  margin: 0;
+  transition: .3s ease-in-out;
+  padding-bottom: 0;
+  >li {
+    margin: 0 2px;
+    display: inline-block;
+  }
+  li {
+    a {
+      &:hover {
+        i {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.team-carousel {
+  margin-top: 12px;
+  .owl-dots {
+    position: absolute;
+    top: -80px;
+    right: 0;
+  }
+  .owl-theme .owl-dots .owl-dot {
+    span {
+      border: 1px solid $white;
+      background: $color_orange;
+      background: linear-gradient(to bottom, $color_orange 0, $color_orange 100%);
+      transition: all 0.3s ease;
+    }
+    &.active span {
+      background: $color_orange;
+      background: linear-gradient(to bottom, $color_orange 0, $color_orange 100%);
+      width: 25px;
+      transition: all 0.3s ease;
+    }
+  }
+  button {
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+
+
+@media(max-width: 1366px) {
+  .feature-block {
+    padding: 20px;
+    &:hover .team-social li {
+      &:nth-child(1) {
+        animation: none;
+      }
+      &:nth-child(2) {
+        animation: none;
+      }
+      &:nth-child(3) {
+        animation: none;
+      }
+      &:nth-child(4) {
+        animation: none;
+      }
+      &:nth-child(5) {
+        animation: none;
+      }
+    }
+  }
+}
+
+@media(max-width: 1199px) {
+  .feature-box {
+    padding: 15px;
+  }
+  .team-social li {
+    margin: 0 2px;
+  }
+  .feature-block .team-social {
+    opacity: 1;
+    li a {
+      padding: 5px;
+    }
+  }
+}
+
+
+@media(max-width: 991px) {
+  .feature {
+    background-position: bottom;
+  }
+  .team-social li {
+    margin: 0 3px;
+  }
+  .feature-block .team-social li a {
+    padding: 7px;
+  }
+  .team-carousel .owl-dots {
+    position: relative;
+    top: 10px;
+  }
+
+}
+
+
+@media(max-width: 767px) {
+  .feature-block {
+    padding: 30px;
+  }
+
+}
+
+@media(max-width: 600px) {
+  .team-carousel .team-item {
+    animation: none;
+  }
+  .feature-block:hover .team-social li {
+    &:nth-child(1) {
+      animation: none;
+    }
+    &:nth-child(2) {
+      animation: none;
+    }
+    &:nth-child(3) {
+      animation: none;
+    }
+    &:nth-child(4) {
+      animation: none;
+    }
+    &:nth-child(5) {
+      animation: none;
+    }
+  }
+
+}
+
+@media(max-width: 576px) {
+  .team-carousel .team-item {
+    animation: none;
+  }
+  .feature-block:hover .team-social li {
+    &:nth-child(1) {
+      animation: none;
+    }
+    &:nth-child(2) {
+      animation: none;
+    }
+    &:nth-child(3) {
+      animation: none;
+    }
+    &:nth-child(4) {
+      animation: none;
+    }
+    &:nth-child(5) {
+      animation: none;
+    }
+  }
+
+}
+
+@media(max-width: 480px) {
+  .team-carousel .owl-dots {
+    top: -54px;
+  }
+
+}
+

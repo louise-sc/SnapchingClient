@@ -1,0 +1,223 @@
+@import 'variable';
+html {
+  overflow-x: hidden;
+}
+
+section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden;
+
+}
+
+a {
+  color: $color-dark-blue;
+  &:hover {
+    color: $color_orange;
+    text-decoration: none;
+  }
+  &:focus {
+    color: $color_orange;
+    text-decoration: none;
+  }
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color: $color_orange;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.theme-link {
+  color: $color_orange;
+  transition: all 0.3s ease;
+  &:hover,
+  &:focus {
+    color: $color_orange;
+    transition: all 0.3s ease;
+  }
+}
+
+.form-group {
+  position: relative;
+  .show-hide {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    .show {
+      &:after {
+        content: "";
+        width: 1px;
+        height: 35px;
+        background: #444;
+        position: absolute;
+        top: -11px;
+        left: 5px;
+        opacity: 1;
+        transform: rotate(30deg);
+      }
+    }
+    span {
+      width: 12px;
+      font-size: 0;
+      height: 12px;
+      line-height: 12px;
+      background: $color_orange;
+      border-radius: 50%;
+      float: right;
+      cursor: pointer;
+      &:before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #444444;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+
+.rating-star {
+  margin-top: 45px;
+  animation: fadeIn 1.5s ease-in-out;
+  img {
+    margin-right: 25px;
+  }
+}
+
+.fixed-top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.darkHeader {
+  background: $white;
+  box-shadow: 1px 1px 12px 1px rgba(221, 221, 221, 0.4);
+  padding: 0;
+  transition: all 0.3s ease;
+  &.theme-nav .nav-item {
+    padding: 20px 0 20px 7px;
+  }
+}
+
+.icon-hover {
+  border: 1px solid $color_cararra;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+}
+
+.owl-carousel {
+  z-index: 1;
+}
+
+.overlay {
+  padding-top: 15px;
+  padding-bottom: 30px;
+}
+
+.theme-form {
+  margin-top: 45px;
+  .form-control {
+    font-size: 12px;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 30px;
+    box-shadow: 0 0 5px 0 $color_darker_gray;
+    min-height: 42px;
+  }
+  .btn-custom {
+    padding: 10px 40px;
+  }
+  input::-webkit-input-placeholder {
+    color: $color_darker_gray !important;
+  }
+  textarea::-webkit-input-placeholder {
+    color: $color_darker_gray !important;
+  }
+  .form-button {
+    text-align: right;
+  }
+  .form-group {
+    margin: 25px auto;
+  }
+}
+
+.authentication-form {
+  .or-saparator {
+    position: relative;
+    padding: 10px 0;
+    text-align: center;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      height: 1px;
+      margin-top: 1px;
+      width: 100%;
+      content: '';
+      background: rgba(40, 56, 76, 0.1);
+      z-index: 1;
+    }
+    span {
+      position: relative;
+      display: inline-block;
+      text-transform: uppercase;
+      font-size: 0.81em;
+      padding: 0 8px;
+      background: #fff;
+      color: #868686;
+      z-index: 2;
+    }
+  }
+  .card {
+    border: 0;
+    padding: 30px 50px 50px;
+    width: 500px;
+    margin: 0 auto;
+    border-top: 3px solid $color_orange;
+    border-radius: 0;
+  }
+  .title {
+    margin-bottom: 20px;
+  }
+  p {
+    width: 70%;
+    margin: 0 auto 30px;
+  }
+  .theme-form {
+    margin-top: 0;
+    .form-control {
+      box-shadow: 0 0 5px 0 rgba(170, 170, 170, 0.35);
+    }
+  }
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  background-image: $auth-bg;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .innerpage-decor {
+    .innerpage-circle1 {
+      bottom: 180px;
+    }
+    .innerpage-circle2 {
+      bottom: 20px;
+    }
+  }
+}

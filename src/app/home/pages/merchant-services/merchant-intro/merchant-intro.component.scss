@@ -1,0 +1,48 @@
+@import '../../../../../assets/scss/variable';
+
+h1 {
+  line-height: 50px;
+}
+
+.home {
+  background-image: $merchant-bg;
+  width: 100vw;
+  height: 100vh !important;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  display: block;
+  background-size: cover;
+  background-position: bottom;
+  position: relative;
+  .fp-tableCell {
+    display: block;
+  }
+}
+
+.home-contain {
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 74px);
+  margin-top: -27px;
+  h4 {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    font-size: 18px;
+  }
+}
+
+.home-right {
+  transform: translateY(90px);
+  width: 100%;
+}
+
+@media(max-width: 767px) {
+  .home {
+    background-image: $merchant-small-screen-bg;
+    min-height: 100vh;
+  }
+}
+
+
+

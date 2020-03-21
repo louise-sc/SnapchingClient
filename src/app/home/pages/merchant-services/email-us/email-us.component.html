@@ -1,0 +1,20 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="footer-text">
+          <h2 class="title text-center md-margin-top">Get Started With <span>Snapching</span></h2>
+          <p>Enter your email and we will contact you</p>
+          <form class="footer-form" (ngSubmit)="onSubmit(name.value)">
+            <div class="form-group">
+              <input #name type="email"  name="EMAIL" id="mce-EMAIL" class="form-control" placeholder="enter your email">
+            </div>
+            <div class="form-button">
+              <button type="submit" class="btn btn-custom theme-color float-right">send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

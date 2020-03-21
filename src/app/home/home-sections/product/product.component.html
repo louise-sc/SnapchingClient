@@ -1,0 +1,26 @@
+<div class="product services p-t-0" id="services">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2">
+                <div class="title">
+                    <div class="sub-title">
+                        <p class="para">
+                            Snapching is a secure platform in which Shoppers save money and provide feedback on their merchant experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 service-container" *ngFor="let data of productDescriptions">
+                <div class="service text-center">
+                    <div class="img-block">
+                        <img [src]="data.image" alt="" class="service-img img-fluid">
+                    </div>
+                    <div class="service-feature">
+                        <h4 class="feature-text text-center">{{data.title}}</h4>
+                        <p class="text-center">{{data.postedBy}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

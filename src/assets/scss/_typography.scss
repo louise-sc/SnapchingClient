@@ -1,0 +1,100 @@
+body {
+  overflow-x: hidden;
+  font-family: $font_poppins, $font_sans-serif;
+  background-color: $white;
+  position: relative;
+  font-size: 15px;
+  &.home-style {
+    padding: 0 !important;
+    &.modal-open {
+      .navbar {
+        padding: 15px 0 0 !important;
+      }
+    }
+  }
+}
+
+h1 {
+  line-height: 28px;
+  font-size: 63px;
+  margin-top: 25px;
+  margin-bottom: 40px;
+  color: $color_orange;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+h2 {
+  line-height: 28px;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  color: $color_tundora;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+h3 {
+  font-family: $font_montserrat, $font_sans-serif;
+  line-height: 28px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 30px;
+  color: $color_tundora;
+  letter-spacing: 1px;
+}
+
+h4 {
+  line-height: 28px;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+h5 {
+  line-height: 28px;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 0;
+  letter-spacing: 0.1em;
+  color: $color_tapa;
+}
+
+h6 {
+  line-height: 28px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 25px;
+  color: $color_tapa;
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.8em;
+  font-size: 15px;
+  color: $color_tapa;
+  letter-spacing: 0.03em;
+  &.landing-caption {
+    font-size: 30px;
+    line-height: 1.5;
+    span {
+      color: $color_tundora;
+      font-weight: 600;
+    }
+  }
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.font-gray {
+  color: $color_tundora;
+}
+
+.title span {
+  font-weight: 700;
+}

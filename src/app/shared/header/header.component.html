@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg navbar-light theme-nav fixed-top" [class.darkHeader]="darkHeader">
+  <div class="container">
+    <a class="navbar-brand" [routerLink]="''"><img src="assets/images/logo.png" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" (click)="isOpenMobile=!isOpenMobile">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse default-nav" id="navbarSupportedContent" [class.show]="isOpenMobile">
+      <ul class="navbar-nav ml-auto" id="mymenu">
+        <li class="nav-item">
+          <a class="nav-link" href="">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/merchant-services'">merchant services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/coming-soon'">product</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/coming-soon'">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-menuanchor="contact" [routerLink]="'/coming-soon'">contact</a>
+        </li>
+        <li class="nav-item">
+          <div class="form-button">
+            <button class="btn btn-custom theme-color" [routerLink]="'/sign-in'">Log In</button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

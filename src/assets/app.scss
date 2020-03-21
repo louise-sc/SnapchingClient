@@ -1,0 +1,20 @@
+// Bootstrap Layout scss
+@import '~bootstrap/scss/bootstrap';
+
+// Owl-Carousel css
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
+// Page loader Topbar
+@import "pace/pace-theme-min.css";
+
+// Main style Layout
+@import "scss/style";
+
+// Responsive Layout
+@import "scss/responsive";
+
+@import "scss/buttons";
+@import "scss/typography";
+@import "scss/loader";
+@import "scss/keyframes";

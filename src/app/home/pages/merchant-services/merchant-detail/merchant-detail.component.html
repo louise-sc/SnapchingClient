@@ -1,0 +1,28 @@
+<!--business css start-->
+<section class="merchant-detail bg-gradient quick-sol">
+    <div class="container set-center-div">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="offers-container">
+                    <h2 class="\offer-heading-text title">Quick & Powerful <span>Solution</span></h2>
+                    <div class="bottom-border">
+                    </div>
+                    <div class="offers-content" *ngFor="let solution of solutions">
+                        <div class="d-flex">
+                            <i class="fa fa-check-circle" aria-hidden="true"></i>
+                            <div>
+                                <h4 class="offer-main-text">{{solution.title}}</h4>
+                                <p class="offer-sub-text">{{solution.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-text side-img">
+                <img alt="" src="assets/images/merchant/detail.png" class="img-fluid" data-tilt data-tilt-max="3"
+                     data-tilt-speed="400" data-tilt-perspective="500">
+            </div>
+        </div>
+    </div>
+</section>
+<!--business css end-->
