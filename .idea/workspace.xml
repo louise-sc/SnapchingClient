@@ -514,10 +514,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1509" />
-    <option name="width" value="1057" />
-    <option name="height" value="1046" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="295" />
+    <option name="y" value="-8" />
+    <option name="width" value="850" />
+    <option name="height" value="220" />
   </component>
   <component name="ProjectId" id="1Ylnh6gWaGfzC9D9Em9Dnvcbu2H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -644,7 +645,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/Themes/EVELYNN/Angular Landing" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -797,8 +798,8 @@
     <option name="version" value="1" />
     <option name="exactExcludedFiles">
       <list>
-        <option value="C:/Themes/EVELYNN/Angular Landing/node_modules/karma/config.tpl.js" />
-        <option value="C:/Themes/UNICE/unice-angular-multipurpose-template/unice-full/unice-full/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/../Themes/EVELYNN/Angular Landing/node_modules/karma/config.tpl.js" />
+        <option value="$PROJECT_DIR$/../Themes/UNICE/unice-angular-multipurpose-template/unice-full/unice-full/node_modules/karma/config.tpl.js" />
       </list>
     </option>
   </component>
